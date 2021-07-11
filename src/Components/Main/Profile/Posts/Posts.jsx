@@ -6,7 +6,7 @@ const Posts = (props)=>{
     return(
         <div className={psts.postsMain}>
             <div className={psts.writeBlock}>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <textarea name="" id="" cols="30" rows="3"></textarea>
                 <button>Post</button>
             </div>
             <div className={psts.singlePostsBlock}>

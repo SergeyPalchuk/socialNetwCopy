@@ -1,12 +1,12 @@
 import React from 'react'
-import xx from './xx'
+import ft from './Footer.module.css'
 
-const Comp = (props)=>{
+const Footer = (props)=>{
     return(
-        <div className={}>
-
+        <div className={ft.footer}>
+            footer
         </div>
     )
 }
 
-export default Comp;
+export default Footer;

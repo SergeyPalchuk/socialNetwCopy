@@ -1,12 +1,18 @@
 import React from 'react'
-import xx from './xx'
+import dl from './Dialogs.module.css'
 
-const Comp = (props)=>{
+const Dialogs = (props)=>{
     return(
-        <div className={}>
+        <div className={dl.dialogsBlock}>
+            <div className={dl.dialogsList}>
+                List of dialogs
+            </div>
 
+            <div className={dl.messages}>
+                Here messages
+            </div>
         </div>
     )
 }
 
-export default Comp;
+export default Dialogs;

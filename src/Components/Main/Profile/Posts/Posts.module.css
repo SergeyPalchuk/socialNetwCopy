@@ -1,0 +1,14 @@
+.postsMain{
+    display: flex;
+    flex-direction: column;
+}
+
+.writeBlock{
+    display: flex;
+    flex-direction: row;
+}
+
+.singlePostsBlock{
+    display: flex;
+    flex-direction: column;
+}

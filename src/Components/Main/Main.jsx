@@ -1,12 +1,20 @@
 import React from 'react'
-import xx from './xx'
+import { BrowserRouter, Route } from 'react-router-dom'
+import mn from './Main.module.css'
+import Navbar from "./Navbar/Navbar"
+import Profile from "./Profile/Profile"
+import Dialogs from "./Dialogs/Dialogs"
 
-const Comp = (props)=>{
+const Main = (props)=>{
     return(
-        <div className={}>
-
+        <BrowserRouter>
+        <div className={mn.main}>
+            <Navbar/>
+            <Route path="/Profile" component={Profile} />
+            <Route path="/Dialogs" component={Dialogs} />
         </div>
+        </BrowserRouter>
     )
 }
 
-export default Comp;
+export default Main;

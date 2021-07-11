@@ -1,0 +1,11 @@
+.postBlock{
+    display: flex;
+    flex-direction: column;
+}
+.postAvatar{
+    border-radius: 20px;
+}
+.avatarText{
+    display: flex;
+    flex-direction: row;
+}
