@@ -1,0 +1,15 @@
+.dialogItem{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+
+.dialogInfo{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 5px 0px 5px;
+}
+
+.avatar{
+    border-radius: 20px;
+}

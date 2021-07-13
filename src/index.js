@@ -3,10 +3,18 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Dialog from './Components/Main/Dialogs/SingleDialog.jsx'
+
+
+let data = [
+  {id:1, name: 'Vitaliy'},
+{id:2, name: 'Sergey'}]
+
+let dialogs = data.map( el => {return(<Dialog name={el.name} dialogId={el.id}/>)})
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App userDialogs={dialogs}/>
   </React.StrictMode>,
   document.getElementById('root')
 );

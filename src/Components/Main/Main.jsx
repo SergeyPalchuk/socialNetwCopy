@@ -11,7 +11,7 @@ const Main = (props)=>{
         <div className={mn.main}>
             <Navbar/>
             <Route path="/Profile" component={Profile} />
-            <Route path="/Dialogs" component={Dialogs} />
+            <Route path="/Dialogs" render={()=><Dialogs dialogs={props.userDialogs} />} />
         </div>
         </BrowserRouter>
     )

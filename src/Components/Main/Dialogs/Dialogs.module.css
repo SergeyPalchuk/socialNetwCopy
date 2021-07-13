@@ -1,0 +1,16 @@
+.dialogsBlock{
+    display: flex;
+    flex-direction: row;
+}
+
+.dialogsList{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+.messages{
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    background-color: azure;
+}
