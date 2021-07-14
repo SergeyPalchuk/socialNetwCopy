@@ -10,8 +10,8 @@ const Main = (props)=>{
         <BrowserRouter>
         <div className={mn.main}>
             <Navbar/>
-            <Route path="/Profile" component={Profile} />
-            <Route path="/Dialogs" render={()=><Dialogs dialogs={props.userDialogs} />} />
+            <Route path="/Profile" render={()=><Profile posts={props.posts} addPost={props.addPost}/>} />
+            <Route path="/Dialogs" render={()=><Dialogs dialogs={props.userDialogs} messages={props.messages}/>} />
         </div>
         </BrowserRouter>
     )

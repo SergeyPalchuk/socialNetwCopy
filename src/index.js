@@ -4,17 +4,19 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Dialog from './Components/Main/Dialogs/SingleDialog.jsx'
+import state from './Redux/state.jsx'
+import Message from './Components/Main/Dialogs/SingleMessage.jsx'
+import Post from './Components/Main/Profile/Posts/SinglePost.jsx'
+import {addPost} from './Redux/state.jsx'
 
-
-let data = [
-  {id:1, name: 'Vitaliy'},
-{id:2, name: 'Sergey'}]
-
-let dialogs = data.map( el => {return(<Dialog name={el.name} dialogId={el.id}/>)})
+addPost('My new function works')
+let dialogs = state.dialogs.map( el => {return(<Dialog name={el.name} dialogId={el.id} lastMessage={el.lastMessage}/>)})
+let messages = state.messages.map( el => {return(<Message text={el.messageText} messageId={el.messageId}/>  )})
+let posts = state.posts.map(el=>{return(<Post text={el.text} id={el.id}/>)})
 
 ReactDOM.render(
   <React.StrictMode>
-    <App userDialogs={dialogs}/>
+    <App userDialogs={dialogs} messages={messages} posts={posts} addPost={addPost}/>
   </React.StrictMode>,
   document.getElementById('root')
 );

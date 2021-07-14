@@ -1,6 +1,7 @@
 import React from 'react'
 import dl from './Dialogs.module.css'
 import Dialog from './SingleDialog.jsx'
+import Message from './SingleMessage.jsx'
 
 const Dialogs = (props)=>{
 
@@ -10,8 +11,13 @@ const Dialogs = (props)=>{
                 {props.dialogs}
             </div>
 
-            <div className={dl.messages}>
-                Here messages
+            <div className={dl.messagesBlock}>
+                <Message text='hello'/>
+                {props.messages}
+                <div className={dl.writeArea}>
+                    <textarea name="" id="" cols="30" rows="3"></textarea>
+                    <button>Send</button>
+                </div>
             </div>
         </div>
     )

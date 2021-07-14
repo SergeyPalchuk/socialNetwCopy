@@ -13,7 +13,7 @@ const SingleDialog = (props)=>{
                 </div>
 
                 <div className={sn.lastMessage}>
-                    Last message...
+                    {props.lastMessage}
                 </div>
             </div>
         </div>

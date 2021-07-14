@@ -8,9 +8,14 @@
     display: flex;
     flex-direction: column;
 }
-.messages{
+.messagesBlock{
     width: 450px;
     display: flex;
     flex-direction: column;
     background-color: azure;
+}
+
+.writeArea{
+    display: flex;
+    flex-direction: row;
 }
