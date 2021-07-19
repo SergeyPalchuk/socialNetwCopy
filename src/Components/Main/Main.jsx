@@ -10,7 +10,7 @@ const Main = (props)=>{
         <BrowserRouter>
         <div className={mn.main}>
             <Navbar/>
-            <Route path="/Profile" render={()=><Profile posts={props.posts} addPost={props.addPost}/>} />
+            <Route path="/Profile" render={()=><Profile postPage={props.state.postPage} posts={props.posts} addPost={props.addPost} changeTextArea={props.changeTextArea}/>} />
             <Route path="/Dialogs" render={()=><Dialogs dialogs={props.userDialogs} messages={props.messages}/>} />
         </div>
         </BrowserRouter>

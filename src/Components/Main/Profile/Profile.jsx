@@ -15,7 +15,7 @@ const Profile = (props)=>{
                 </div>
             </div>
 
-            <Posts posts={props.posts} addPost={props.addPost}/>
+            <Posts postPage={props.postPage} posts={props.posts} addPost={props.addPost} changeTextArea={props.changeTextArea}/>
         </div>
     )
 }

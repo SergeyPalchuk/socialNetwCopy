@@ -8,7 +8,7 @@ function App(props) {
   return (
     <div className="App">
       <Header/>
-      <Main userDialogs = {props.userDialogs} messages={props.messages} posts={props.posts} addPost={props.addPost}/>
+      <Main state={props.state} userDialogs = {props.userDialogs} messages={props.messages} posts={props.posts} changeTextArea={props.changeTextArea} addPost={props.addPost} />
       <Footer/>
     </div>
   );
