@@ -1,13 +1,3 @@
-.dialogsBlock{
-    display: flex;
-    flex-direction: row;
-}
-
-.dialogsList{
-    width: 250px;
-    display: flex;
-    flex-direction: column;
-}
 .messagesBlock{
     width: 450px;
     display: flex;

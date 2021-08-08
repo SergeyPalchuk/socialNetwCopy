@@ -3,10 +3,21 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {renderPage} from './render.js'
-import state from './Redux/state.jsx'
+import store from './Redux/reduxStore'
+import { Provider } from 'react-redux';
 
-renderPage(state);
+export const renderPage = ()=>{
+    ReactDOM.render(
+      <React.StrictMode>
+        <Provider store = {store}>
+        <App />
+        </Provider>
+      </React.StrictMode>,
+      document.getElementById('root')
+    );}
+
+    renderPage()
+
 
 
 // If you want to start measuring performance in your app, pass a function

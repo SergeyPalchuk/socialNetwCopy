@@ -1,0 +1,10 @@
+.dialogsBlock{
+    display: flex;
+    flex-direction: row;
+}
+
+.dialogsList{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}

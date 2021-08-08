@@ -1,6 +1,6 @@
 import React from 'react'
 import pr from './Profile.module.css'
-import Posts from './Posts/Posts'
+import PostsContainer from './Posts/PostsContainer'
 
 const Profile = (props)=>{
     return(
@@ -15,7 +15,7 @@ const Profile = (props)=>{
                 </div>
             </div>
 
-            <Posts postPage={props.postPage} posts={props.posts} addPost={props.addPost} changeTextArea={props.changeTextArea}/>
+            <PostsContainer postPage={props.postPage} dispatch={props.dispatch}/>
         </div>
     )
 }
