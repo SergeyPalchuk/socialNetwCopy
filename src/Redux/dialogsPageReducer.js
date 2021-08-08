@@ -15,7 +15,6 @@ export const dialogsPageReducer = (state = initialState, action)=>{
     switch(action.type){
         case 'ADD_MESSAGE':
             stateCopy.messages.push({dialogId:1, messageText:state.newMessageText, messageId:state.messages[state.messages.length-1]})
-            //this.renderPage(this._state)
             stateCopy.newMessageText=''
             return stateCopy
         break;

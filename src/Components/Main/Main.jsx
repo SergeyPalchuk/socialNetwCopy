@@ -3,8 +3,8 @@ import { BrowserRouter, Route } from 'react-router-dom'
 import mn from './Main.module.css'
 import Navbar from "./Navbar/Navbar"
 import Profile from "./Profile/Profile"
-import Dialogs from "./Dialogs/ListOfDialogs/Dialogs"
 import DialogsContainer from './Dialogs/ListOfDialogs/DialogsContainer'
+import UsersContainer from './Users/UsersContainer'
 
 
 const Main = (props)=>{

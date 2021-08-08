@@ -1,0 +1,19 @@
+.singleUserBlock{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0 0 10px;
+    background-color: cadetblue;
+}
+
+.avatarFollowBlock{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: 100px;
+}
+
+
+
+img{
+    top: 0px;
+}
