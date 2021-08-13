@@ -3,15 +3,18 @@
     flex-direction: column;
     width: 700px;
     background-color: cadetblue;
+    
 }
 
 .infoBlock{
     display: flex;
     flex-direction: row;
     background-color: chocolate;
+    padding: 5px;
 }
 
 .textBlock{
     display: flex;
     flex-direction: column;
+    padding: 5px;
 }
